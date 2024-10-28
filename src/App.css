@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+header {
+  background-color: #3c3c3c;
+  color: white;
+  padding: 10px 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3c3c3c;
+  color: white;
+}
+
+/* Main Container Styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 30px; /* Gap applies between all grid items */
+  padding: 20px;
+  background-image: url('Images/ferdinand-stohr-NFs6dRTBgaM-unsplash.jpg'); /* Background image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+.widget {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for widgets */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 300px; /* Minimum height for widgets */
+  font-size: 1.2em; /* Increased text size for readability */
+  line-height: 1.5; /* Adjusted line height */
+  margin: 20px 10px; /* Additional margin to increase distance between containers */
+}
+
+.news {
+  grid-column: 2 / 4; /* Span columns 2 and 3 */
+  grid-row: 1 / 3; /* Span rows 1 and 2 */
+  margin: 0; /* Remove extra margin for the news widget */
+}
+
+.weather {
+  grid-column: 1; /* First column */
+  grid-row: 1; /* First row */
+}
+
+.scores {
+  grid-column: 1; /* First column */
+  grid-row: 2; /* Second row */
+}
+
